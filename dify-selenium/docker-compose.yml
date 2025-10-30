@@ -1,0 +1,12 @@
+services:
+  selenium-flask:
+    build: .
+    image: dify-selenium
+    container_name: dify-selenium
+    restart: always
+    shm_size: '2gb'
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./scripts:/app/scripts
+
