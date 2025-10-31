@@ -1,0 +1,12 @@
+services:
+  selenium-flask:
+    build: .
+    image: dify-selenium-eip
+    container_name: dify-selenium-eip
+    restart: always
+    shm_size: '2gb'
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./scripts:/app/scripts
+

@@ -1,8 +1,8 @@
 services:
   selenium-flask:
     build: .
-    image: dify-selenium
-    container_name: dify-selenium
+    image: dify-selenium-hr
+    container_name: dify-selenium-hr
     restart: always
     shm_size: '2gb'
     ports:
