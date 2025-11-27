@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y chromium chromium-driver && \
     rm -rf /var/lib/apt/lists/*
 
 COPY scripts /app/scripts
-EXPOSE 8082
+EXPOSE 8081
 CMD ["python3", "/app/scripts/app.py"]
 
